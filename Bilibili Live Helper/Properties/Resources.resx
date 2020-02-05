@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panel_beigeLight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\panel_beigeLight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_01" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_01.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_02" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_07.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_09.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_100" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_100.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_101" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_101.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_102" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_102.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_103" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_103.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_104" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_104.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_105" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_105.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_106" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_106.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_107" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_107.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_108" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_108.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_109" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_109.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_110" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_110.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_111.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_112" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_112.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_113" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_113.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_114" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_114.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_115" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_115.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_116" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_116.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_26.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_27.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_29.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_30.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_31.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_33" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_33.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_34" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_34.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_36" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_36.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_37" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_37.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_38" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_38.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_39" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_39.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_40" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_40.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_41" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_41.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_42" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_42.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_43" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_43.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_44" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_44.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_45" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_45.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_46" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_46.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_47" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_47.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_48" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_49" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_49.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_50.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_51.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_52" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_52.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_53" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_53.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_54" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_54.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_55" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_55.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_56" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_56.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_57" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_57.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_58.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_59" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_59.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_60" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_60.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_61" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_61.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_62" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_63" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_63.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_64" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_64.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_65" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_65.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_66" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_66.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_67" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_67.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_68" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_68.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_69" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_69.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_70" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_70.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_71" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_71.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_72" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_72.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_73" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_73.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_74" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_74.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_75" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_75.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_76" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_76.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_77" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_77.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_78" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_78.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_79" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_79.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_80" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_80.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_81" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_81.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_82" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_82.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_83" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_83.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_84" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_84.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_85" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_85.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_86" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_86.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_87" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_87.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_88" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_88.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_89" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_89.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_90" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_90.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_91" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_91.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_92" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_92.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_93" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_93.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_94" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_94.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_95" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_95.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_96" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_96.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_97" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_97.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_98" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_98.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg_sprite_e15d8c3_99" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg-sprite.e15d8c3_99.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
