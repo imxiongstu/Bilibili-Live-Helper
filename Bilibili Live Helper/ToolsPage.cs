@@ -149,8 +149,8 @@ namespace Bilibili_Live_Helper
         }
         private void button2_Click(object sender, EventArgs ee)
         {
-            int seedCount = 0;//记录送出辣条数
             //一键满所有勋章,一切以辣条为基准
+            int seedCount = 0;//记录送出辣条数
             try
             {
                 string medalHost = "https://api.live.bilibili.com/i/api/medal?page=1&pageSize=100";
@@ -159,6 +159,7 @@ namespace Bilibili_Live_Helper
                 //从第一个勋章开始送
                 for (int i = 0; i < medalCount; i++)
                 {
+                    string roomId = medalJson["data"]["fansMedalList"][i]["roomid"].ToString();
                     string medalTodayFeed = medalJson["data"]["fansMedalList"][i]["todayFeed"].ToString();
                     string medalTodayFeedLimit = medalJson["data"]["fansMedalList"][i]["dayLimit"].ToString();
                     int needCount = int.Parse(medalTodayFeedLimit) - int.Parse(medalTodayFeed);//还需要辣条数
@@ -174,21 +175,21 @@ namespace Bilibili_Live_Helper
                         {
                             //这个背包的礼物数量
                             int currentNum = int.Parse(bagJson["data"]["list"][j]["gift_num"].ToString());
-                            string roomId = medalJson["data"]["fansMedalList"][i]["roomid"].ToString();
                             string bagId = bagJson["data"]["list"][j]["bag_id"].ToString();
                             if (currentNum > needCount)
                             {
                                 //如果当前这个背包的辣条数大于需要的，就送需要的辣条数量
                                 BiliHelper.BiliSendGift(roomId, "1", needCount.ToString(), bagId);
                                 seedCount += needCount;
+                                this.tb_Log.AppendText("[" + DateTime.Now.Date.ToString() + "]" + "成功将" + medalJson["data"]["fansMedalList"][i]["medal_name"] + "勋章亲密度送满" + Environment.NewLine);
                                 break;//跳出，进行下一个勋章
                             }
-                            else if (currentNum < needCount)
+                            else
                             {
                                 //如果当前这个背包的辣条数小于需要的，就送全部辣条
-                                string bagTotalGift = bagJson["data"]["list"][j]["gift_num"].ToString();
                                 BiliHelper.BiliSendGift(roomId, "1", currentNum.ToString(), bagId);
                                 seedCount += currentNum;//如果是自己的勋章，也会加。
+                                needCount -= currentNum;//刷新还需要的辣条数（如果不更新，会导致一个房间送过多辣条）
                             }
 
                         }
