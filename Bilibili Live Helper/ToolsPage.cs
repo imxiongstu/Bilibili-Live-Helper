@@ -17,18 +17,28 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Bilibili_Live_Helper
 {
-    public partial class ToolsPage : Form
+    public partial class ToolsPage :MetroFramework.Forms.MetroForm
     {
         public ToolsPage()
         {
             InitializeComponent();
+            //初始化控件
             //控件双缓存，有效优化ListView闪烁
             listView1.GetType().GetProperty("DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic).SetValue(this.listView1, true, null);
+            listView2.GetType().GetProperty("DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic).SetValue(this.listView2, true, null);
+            metroTabControl1.ItemSize = new Size((metroTabControl1.Size.Width-20)/4,35);
+            metroTabControl2.Visible = true;
         }
         private void ToolsPage_Load(object sender, EventArgs e)
         {
-            //初始化主页
-            InitInfo();
+            //初始化主页         
+            //先加载一次背包
+            LoadBagList();
+            //加载用户信息
+            LoadUserInfo();
+            //加载用户勋章
+            LoadMedalList();
+            //无限刷新背包
             this.timer1.Start();
         }
 
@@ -36,16 +46,7 @@ namespace Bilibili_Live_Helper
         {
         }
 
-        //进入软件，初始化操作
-        private void InitInfo()
-        {
-            //先加载一次背包
-            LoadBagList();
-            //加载用户信息
-            LoadUserInfo();
-            //加载用户勋章
-            LoadMedalList();
-        }
+
 
         private void button1_Click_1(object sender, EventArgs e)
         {
@@ -57,7 +58,7 @@ namespace Bilibili_Live_Helper
             {
                 string userInfoUrl = "https://api.live.bilibili.com/User/getUserInfo";
                 JObject jo = JObject.Parse(BiliHelper.BiliGetRequest(userInfoUrl, BiliHelper.Data.BiliCookie));
-                this.groupBox1.Text = (string)jo["data"]["uname"];
+                this.Text = (string)jo["data"]["uname"];
                 this.lb_BiliCoin.Text = (string)jo["data"]["billCoin"];
                 this.lb_Gold.Text = (string)jo["data"]["gold"];
                 this.lb_Silver.Text = (string)jo["data"]["silver"];
@@ -101,7 +102,10 @@ namespace Bilibili_Live_Helper
                     this.listView1.Items.Add(li);
                 }
                 //背包列表自适应大小
-                this.listView1.Columns[0].Width = -2;
+                for (int i = 0; i < this.listView1.Columns.Count; i++)
+                {
+                    this.listView1.Columns[i].Width = this.listView1.ClientSize.Width / this.listView1.Columns.Count;
+                }
             }
             catch (Exception e)
             {
@@ -113,6 +117,7 @@ namespace Bilibili_Live_Helper
         {
             try
             {
+                this.listView2.Items.Clear();
                 string medalHost = "https://api.live.bilibili.com/i/api/medal?page=1&pageSize=100";
                 JObject medalJson = JObject.Parse(BiliHelper.BiliGetRequest(medalHost, BiliHelper.Data.BiliCookie));
                 int medalCount = medalJson["data"]["fansMedalList"].Count();
@@ -125,17 +130,23 @@ namespace Bilibili_Live_Helper
                     string medalTotalIntimacy = medalJson["data"]["fansMedalList"][i]["next_intimacy"].ToString();
                     string medalTodayFeed = medalJson["data"]["fansMedalList"][i]["todayFeed"].ToString();
                     string medalTodayFeedLimit = medalJson["data"]["fansMedalList"][i]["dayLimit"].ToString();
+                    string medalUpName = medalJson["data"]["fansMedalList"][i]["target_name"].ToString();
                     ListViewItem li = new ListViewItem(medalLevel);
                     li.UseItemStyleForSubItems = false;
                     li.SubItems.Add(medalName);
                     li.SubItems.Add(medalCurrentIntimacy + "/" + medalTotalIntimacy);
                     li.SubItems.Add(medalTodayFeed + "/" + medalTodayFeedLimit);
+                    li.SubItems.Add(medalUpName);
                     li.BackColor = Color.FromArgb(int.Parse(medalColor));
                     li.SubItems[1].BackColor = Color.FromArgb(int.Parse(medalColor));
                     this.listView2.Items.Add(li);
                 }
                 //自适应单元格宽度
-                this.listView2.Columns[0].Width = -2;
+              for (int i = 0; i < this.listView2.Columns.Count; i++)
+              {
+                    this.listView2.Columns[i].Width = -2;
+              }
+                
             }
             catch (Exception e)
             {
@@ -181,6 +192,8 @@ namespace Bilibili_Live_Helper
                                 //如果当前这个背包的辣条数大于需要的，就送需要的辣条数量
                                 BiliHelper.BiliSendGift(roomId, "1", needCount.ToString(), bagId);
                                 seedCount += needCount;
+
+                                //输出日志
                                 this.tb_Log.AppendText("[" + DateTime.Now.Date.ToString() + "]" + "成功将" + medalJson["data"]["fansMedalList"][i]["medal_name"] + "勋章亲密度送满" + Environment.NewLine);
                                 break;//跳出，进行下一个勋章
                             }
@@ -196,16 +209,30 @@ namespace Bilibili_Live_Helper
                     }
                 }
                 MessageBox.Show("全部赠送完毕，累积送出" + seedCount);
+                //刷新勋章
+                LoadMedalList();
             }
             catch (Exception e)
             {
-                MessageBox.Show(e.Message + "\n勋章里面有自己勋章的时候，可能会出现。");
+                MessageBox.Show("1.勋章里面有自己勋章的时候，可能会出现+或者\n2.对方未开通直播间可能出现\n【给泽酱看的："+e.Message+"】");
             }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            BiliHelper.BiliSendGift("2534773", "1", "1", "167626513");
+          
+        }
+
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+            this.metroTabControl1.Visible = false;
+            this.metroTabControl2.Visible = true;
+        }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            this.metroTabControl1.Visible = true;
+            this.metroTabControl2.Visible = false;
         }
     }
 }
